@@ -83,7 +83,7 @@ function VideoItem({ data, isFocus }) {
 
   return (
     <View style={[styles.container, { height: SCREEN_HEIGHT - tabBarHeight }]}>
-      <StatusBar barStyle="light-content" />
+      <StatusBar barStyle="light-content" translucent backgroundColor={'transparent'} />
 
       <Video source={{ uri }} style={styles.video} resizeMode={'cover'} paused={!isFocus} repeat />
 
